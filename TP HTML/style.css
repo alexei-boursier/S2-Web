@@ -1,5 +1,19 @@
+@keyframes highlight {
+	from {
+		background-color: yellow;
+	}
+
+	to {
+		background-attachment: initial;
+	}
+}
+
 * {
 	font-family: 'Noto Sans', sans-serif;
+}
+
+dfn:target {
+	animation: 2s ease-in-out 0s highlight;
 }
 
 html,
