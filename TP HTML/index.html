@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+ <html lang="fr">	<!-- cette balise permet d'insérer des commentaires dans votre code -->
+  <head>	<!-- En-tête de votre code HTML -->
+   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+   <meta name="description" content="page web pour découvrir le langage HTML">
+   <meta name="keywords" content="HTML,hypertext,image,list">
+   <meta name="author" content="M Abrecht">
+
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+   <title>Ma deuxième page WEB</title>	<!-- Ce titre s'affiche dans l'onglet du navigateur -->
+ </head>
+ <body>	<!-- Corps de la page -->
+  <header>
+   <div>
+    <button onclick="history.back()">
+     <span class="material-symbols-outlined">arrow_back</span>
+    </button>
+   </div>
+   <div>
+    <h1>Le web</h1>
+    <h2>Le langage HTML</h2>
+   </div>
+  </header>
+  <main>
+   <section id="about">
+    <balise id="debut">Bienvenue</balise> dans cette première page web.<br/>
+    Cette page a été construite afin de pouvoir découvrir et comprendre le principe du langage html.
+
+    A l'aide d'un clic droit, il vous est possible d'accéder au code source, et comparer ce que vous voyez dans votre navigateur avec l'envers du décors !
+   </section>
+   <section id="html">
+    <article>
+	   <h3>Le fond et la forme</h3>
+	
+     <p>
+      Le code HTML est basé sur la séparation entre le "fond" et la "forme" que peut prendre l'information
+      à transmettre.
+     </p>
+ 
+     <div>
+      <h4>Le <em>fond</em> concerne :</h4>
+
+      <!-- Liste à puces (non numérotée = "unordered list") -->
+      <ul>
+       <li>le texte</li>
+       <li>les titres</li>
+       <li>les images et autres types de contenus</li>
+       <li>les liens vers d'autres pages</li>
+       <li>...</li>
+      </ul>
+     </div>
+
+     <div>
+      <h4>La <b>forme</b> concerne :</h4>
+      <!-- Liste numérotée (= ordered list") -->
+      <ol>
+       <li>la couleur</li>
+       <li>la police de caractère</li>
+       <li>les enrichissements de texte</li>
+       <li>la division de la page en sections (menu, en-tête...)</li>
+       <li>le positionnement des différents contenus</li>
+       <li>...</li>
+      </ol>
+     </div>
+
+     <p>
+      Le langage html ne permet dans un premier temps que de s'occuper du fond. <br/>
+      La forme sera gérée par un second fichier que nous observerons ultérieurement.
+     </p>
+    </article>
+	   <article>
+     <p>
+      Dans la liste des fonds possibles, nous parlions d'images. Il est effectivement possible d'insérer des images grâce à du code HTML.
+      Il est également possible de régler ses dimensions
+     </p>
+     <img src="books.jpg" alt="photo de PC">
+
+     <p>
+      <b>Attention :</b> être capable d'insérer des images ne veut pas dire qu'on en a le droit !
+      Vérifiez toujours les droits associés à une image que vous souhaitez utiliser.<br />
+      <a href="https://www.flickr.com/photos/ipasadelaide/14470560300/">&copy; Flickr user ipasadelaide (artist: Jennie Groom)</a>
+     </p>
+
+     <p>
+      L'un des intérêts du langage html est l'utilisation de liens hypertextes <a href="https://www.w3schools.com/html/html_images.asp" target="_blank">
+      Comme celui-ci </a>. Un lien hypertexte a deux propriétés :
+     </p>
+
+     <ul>
+      <li>le texte que verra l'utilisateur</li>
+      <li>l'adresse de la page à ouvrir si l'utilisateur clic sur ce lien</li>
+     </ul>
+  
+     <p>Il en existe de deux types : <a href="https://openclassrooms.com"> externes</a> ou <a href="#debut"> internes</a>.
+
+     <p>
+      Enfin, il peut être très utile de savoir lier deux pages que vous avez créées : il s'agit d'un <a href="tp-html1.html ">lien hypertexte</a>,
+      mais qui cible un document enregistré dans le même dossier que le fichier html en cours d'utilisation.
+     </p>
+    </article>
+   </section>
+  </main>
+ </body>
+</html>
