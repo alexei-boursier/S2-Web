@@ -1,0 +1,35 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    display: flex;
+
+    margin-top: 10px;
+}
+
+section>div:nth-child(1) {
+    flex-grow: 1;
+}
+
+section>aside {
+    width: 30% !important;
+    margin: 10px !important;
+    border: 1px solid black !important;
+    border-radius: 5px !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    padding: 5px !important;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+}
+
+.preview {
+    all: initial;
+}
+
+.preview * {
+    all: revert;
+}

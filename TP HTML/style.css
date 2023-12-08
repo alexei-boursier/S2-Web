@@ -97,3 +97,22 @@ main {
 img {
 	width: 500px;
 }
+
+figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	margin-left: 0px;
+}
+
+figcaption cite {
+	font-style: normal;
+	font-weight: bold;
+}
+
+figcaption cite a {
+	text-decoration: none;
+}
