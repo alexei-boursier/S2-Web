@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="theme-dark">
+<html lang="fr" class="theme-light">
  <head>
   <meta charset="utf-8" />
   <title>L'histoire du Web</title>
@@ -7,149 +7,168 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link rel="stylesheet" href="static/style.css" />
   <link rel="stylesheet" href="static/theme.css" />
+  <link rel="stylesheet" href="static/layout.css" />
+  <link rel="stylesheet" href="static/header.css" />
+  <link rel="stylesheet" href="static/nav.css" />
+
+  <script src="static/theme.js" defer></script>
  </head>
  <body>
   <header>
    <div>
-   </div>
-   <div>
     <h1>L'histoire du Web</h1>
     <p>De 1989 à nos jours</p>
    </div>
-   <div></div>
+   <div>
+    <span class="material-symbols-outlined" id="contrast">
+     contrast
+    </span>
+   </div>
   </header>
+  <main>
+   <nav>
+    <div>
+     <a href="#page-1">Il était une fois... le Web</a>
+    </div>
+    <div>
+     <a href="#page-2">Les formulaires : la fin des sites statiques ?</a>
+    </div>
+    <div>
+     <a href="#page-3">Les pages Web deviennent <em>interactives</em></a>
+    </div>
+    <div>
+     <a href="#page-4">Les contenus multimédias</a>
+    </div>
+   </nav>
 
-  <section> <!-- HTML 1 -->
    <div>
-   <h2>Il était une fois... le Web</h2>
+   <section id="page-1"> <!-- HTML 1 -->
 
-   <article>
-    <h3>Tim Berners-Lee et le CERN</h3>
+    <div id="content">
+     <h2>Il était une fois... le Web</h2>
 
-    <p>
-     <ol>
-      <li><time datetime="1989">1989:</time> Création du Web</li>
-      <li><time datetime="1991-08">Aout 1991:</time> Premiers navigateurs Web publics</li>
-      <li><time datetime="1993-04-30">30 Avril 1993:</time> Domaine public</li>
-     </ol>
+     <article>
+      <h3>Tim Berners-Lee et le CERN</h3>
+      <p>
+       <ol>
+        <li><time datetime="1989">1989:</time> Création du Web</li>
+        <li><time datetime="1991-08">Aout 1991:</time> Premiers navigateurs Web publics</li>
+        <li><time datetime="1993-04-30">30 Avril 1993:</time> Domaine public</li>
+       </ol>
+       Tim Berners-Lee, chercheur au CERN, crée le Web afin notamment de partager les publications
+       scientifiques. Il se base sur le concept de l'hypertexte.
+      </p>
+     </article>
      
-     Tim Berners-Lee, chercheur au CERN, crée le Web afin notamment de partager les publications
-     scientifiques. Il se base sur le concept de l'hypertexte.
-    </p>
-   </article>
+     <article>
+      <h3>Les débuts des pages Web</h3>
+      <!-- Contenu... -->
+     </article>
+     </div>
    
-   <article>
-    <h3>Les débuts des pages Web</h3>
-	
-	   <!-- Contenu... -->
-   </article>
-   </div>
-	
-   <aside class="preview">
-    <h1>Première page Web</h1>
-	   <p>Les pages Web étaient très simples : du texte et des liens.</p>
-    <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">Naviguer sur le premier site Web</a>
-    <p><address>
-     La sémantique existait par contre (ainsi, ceci est une adresse).
-     Cependant elle était assez mal utilisée : une adresse étant le seul moyen de mettre du texte en italique,
-     elle était utilisée pour tous les textes en italique...
-    </address></p>
-   </aside>
-  </section>
-  
-  <section> <!-- HTML 2 -->
-   <div>
-   <h2>Les formulaires : la fin des sites statiques ?</h2>
-   
-   <article>
-    <h3>Les formulaires et les pages statiques</h3>
-	
-   	Les premiers serveurs web (comme <a href="https://www.w3.org/Daemon/">CERN httpd</a>, le premier serveur web)
-   </article>
-   
-   <article>
-    <h3>Les débuts de la <strong>Browser Wars</strong></h3>
-	
-	   <!-- Contenu -->
-   </article>
-   
-   <article>
-    <h3>La sémantique</h3>
-	
-   	<!-- Contenu -->
-   </article>
-   </div>
-   
-   <aside class="preview">
-    <h1>Formulaire</h1>
-   	<form action="">
-     <label for="form-input">Nom:</label>
-     <input id="form-input" name="form-input" type="text" value="CHEVRE" />
-     <br />
-     <label for="form-input-2">Prénom:</label>
-     <input id="form-input-2" name="form-input-2" type="text" value="Louis-Marie" />
-     <br />
-	    <input type="submit" value="Envoyer" />
-   	</form>
-   	<p>En France on a longtemps utilisé le Minitel pour ça.</p>
-   </aside>
-  </section>
-  
-  <section> <!-- HTML 3 -->
-   <div>
-   <h2>Les pages Web deviennent <em>interactives</em></h2>
-   
-   <article>
-    <h3>Java et JavaScript : une révolution</h3>
-	
-	   <!-- Contenu -->
-   </article>
-   
-   <article>
-    <h3>L'apparence des sites Web</h3>
-	
-   	<!-- Contenu -->
-   </article>
-   </div>
-   
-   <aside class="preview">
-    <script>
-     /*let audio = new Audio("static/goat0.mp3");
-     audio.play();*/
+     <aside class="preview">
+      <h1>Première page Web</h1>
+      <p>Les pages Web étaient très simples : du texte et des liens.</p>
+      <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">Naviguer sur le premier site Web</a>
+      <p><address>
+       La sémantique existait par contre (ainsi, ceci est une adresse).
+       Cependant elle était assez mal utilisée : une adresse étant le seul moyen de mettre du texte en italique,
+       elle était utilisée pour tous les textes en italique...
+      </address></p>
+     </aside>
+    </section>
+    
+    <section id="page-2"> <!-- HTML 2 -->
+     <div>
+     <h2>Les formulaires : la fin des sites statiques ?</h2>
+
+     <article>
+      <h3>Les formulaires et les pages statiques</h3>
+      Les premiers serveurs web (comme <a href="https://www.w3.org/Daemon/">CERN httpd</a>, le premier serveur web)
+     </article>
      
-     function lol() {
-      let audio = new Audio("static/goat1.mp3");
-      audio.play();
-     }
+     <article>
+      <h3>Les débuts de la <strong>Browser Wars</strong></h3>
+      <!-- Contenu -->
+     </article>
+     
+     <article>
+      <h3>La sémantique</h3>
+      <!-- Contenu -->
+     </article>
+     </div>
+     
+     <aside class="preview">
+      <h1>Formulaire</h1>
+      <form action="">
+       <label for="form-input">Nom:</label>
+       <input id="form-input" name="form-input" type="text" value="CHEVRE" />
+       <br />
+       <label for="form-input-2">Prénom:</label>
+       <input id="form-input-2" name="form-input-2" type="text" value="Louis-Marie" />
+       <br />
+       <input type="submit" value="Envoyer" />
+      </form>
+      <p>En France on a longtemps utilisé le Minitel pour ça.</p>
+     </aside>
+    </section>
+    
+    <section id="page-3"> <!-- HTML 3 -->
+     <div>
+     <h2>Les pages Web deviennent <em>interactives</em></h2>
+     
+     <article>
+      <h3>Java et JavaScript : une révolution</h3>
+      <!-- Contenu -->
+     </article>
+     
+     <article>
+      <h3>L'apparence des sites Web</h3>
+      <!-- Contenu -->
+     </article>
+     </div>
+     
+     <aside class="preview">
+      <script>
+       /*let audio = new Audio("static/goat0.mp3");
+       audio.play();*/
+       
+       function lol() {
+        let audio = new Audio("static/goat1.mp3");
+        audio.play();
+       }
 
-     function lol2() {
-      let audio = new Audio("static/goat2.mp3");
-      audio.play();
-     }
+       function lol2() {
+        let audio = new Audio("static/goat2.mp3");
+        audio.play();
+       }
 
-     function lul() {
-      window.open("lul.html", "_blank", "popup,width=100,height=100");
-     }
-    </script>
-    <button onclick="lol();">Cliquer!</button>
-    <button onclick="lol2();">Cliquer!</button>
-    <p>
-     JavaScript introduit des problèmes de sécurité et son implémentation est partielle.
-     On a même créé des <a href="javascript:lul();">virus en JavaScript</a>
-    </p>
-   </aside>
-  </section>
+       function lul() {
+        window.open("lul.html", "_blank", "popup,width=100,height=100");
+       }
+      </script>
+      <button onclick="lol();">Cliquer!</button>
+      <button onclick="lol2();">Cliquer!</button>
+      <p>
+       JavaScript introduit des problèmes de sécurité et son implémentation est partielle.
+       On a même créé des <a href="javascript:lul();">virus en JavaScript</a>
+      </p>
+     </aside>
+    </section>
 
-  <section>
-   <div>
-   <h2>Les contenus multimédias</h2>
+    <section id="page-4">
+     <div>
+     <h2>Les contenus multimédias</h2>
+     </div>
+
+     <aside class="preview">
+      <audio controls autoplay loop src="static/Bêêêêêêêêêêêê.webm"></audio>
+     </aside>
+    </section>
    </div>
-
-   <aside class="preview">
-    <audio controls autoplay loop src="static/Bêêêêêêêêêêêê.webm"></audio>
-   </aside>
-  </section>
+  </main>
  </body>
 </html>

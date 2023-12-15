@@ -1,0 +1,44 @@
+header {
+    display: flex;
+
+    border-bottom: 1px solid var(--color-foreground);
+}
+
+header > div:nth-child(1) {
+    flex-grow: 1;
+    padding: 3px;
+}
+
+header > div:nth-child(2) {
+    margin: 5px;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > div:nth-child(2):hover {
+    background-color: var(--color-hover);
+}
+
+header h1, header p {
+    margin: 0px;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+header p {
+    font-size: 15px;
+    color: var(--color-dimmed);
+}
+
+header span {
+    font-size: 35px !important;
+    width: 50px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
