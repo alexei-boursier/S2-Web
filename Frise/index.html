@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="theme-dark">
  <head>
   <meta charset="utf-8" />
   <title>L'histoire du Web</title>
@@ -9,11 +8,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="static/theme.css" />
  </head>
  <body>
   <header>
-   <h1>L'histoire du Web</h1>
-   <p>De 1989 à nos jours</p>
+   <div>
+   </div>
+   <div>
+    <h1>L'histoire du Web</h1>
+    <p>De 1989 à nos jours</p>
+   </div>
+   <div></div>
   </header>
 
   <section> <!-- HTML 1 -->
@@ -46,7 +51,11 @@
     <h1>Première page Web</h1>
 	   <p>Les pages Web étaient très simples : du texte et des liens.</p>
     <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">Naviguer sur le premier site Web</a>
-	   <address>La sémantique existait par contre (ainsi, ceci est une adresse)</address>
+    <p><address>
+     La sémantique existait par contre (ainsi, ceci est une adresse).
+     Cependant elle était assez mal utilisée : une adresse étant le seul moyen de mettre du texte en italique,
+     elle était utilisée pour tous les textes en italique...
+    </address></p>
    </aside>
   </section>
   
@@ -57,7 +66,7 @@
    <article>
     <h3>Les formulaires et les pages statiques</h3>
 	
-   	<!-- Contenu... -->
+   	Les premiers serveurs web (comme <a href="https://www.w3.org/Daemon/">CERN httpd</a>, le premier serveur web)
    </article>
    
    <article>
@@ -77,7 +86,11 @@
     <h1>Formulaire</h1>
    	<form action="">
      <label for="form-input">Nom:</label>
-     <input id="form-input" name="form-input" type="text" value="La Chèvre" />
+     <input id="form-input" name="form-input" type="text" value="CHEVRE" />
+     <br />
+     <label for="form-input-2">Prénom:</label>
+     <input id="form-input-2" name="form-input-2" type="text" value="Louis-Marie" />
+     <br />
 	    <input type="submit" value="Envoyer" />
    	</form>
    	<p>En France on a longtemps utilisé le Minitel pour ça.</p>
@@ -135,7 +148,7 @@
    </div>
 
    <aside class="preview">
-    <audio controls autoplay loop src="static/goat0.mp3"></audio>
+    <audio controls autoplay loop src="static/Bêêêêêêêêêêêê.webm"></audio>
    </aside>
   </section>
  </body>

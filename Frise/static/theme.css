@@ -1,0 +1,34 @@
+:root {
+    --c-indigo-600: #3949AB;
+    --c-blue-600: #1E88E5;
+    --c-blue-700: #1976D2;
+    --c-blue-900: #0D47A1;
+    --c-gray-200: #EEEEEE;
+    --c-gray-300: #E0E0E0;
+    --c-gray-900: #212121;
+    --c-white: #ffffff;
+}
+
+:root.theme-dark {
+    --color-foreground: var(--c-gray-300);
+    --color-background: var(--c-gray-900);
+    --color-link: var(--c-blue-600);
+    --color-visited: var(--c-indigo-600);
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+}
+
+aside {
+    background-color: var(--c-white) !important;
+}
+
+a {
+    color: var(--color-link);
+}
+
+a:visited {
+    color: var(--color-visited);
+}
