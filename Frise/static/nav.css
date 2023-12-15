@@ -6,7 +6,7 @@ nav {
 
 nav div {
     margin: 0px;
-    padding: 5px;
+    /*padding: 5px;*/
 
     width: 100%;
     height: 30px;
@@ -24,17 +24,19 @@ nav div:hover {
 
 nav a {
     padding: 5px;
+    margin-left: 5px;
     width: 100%;
 
     text-decoration: none;
     color: var(--color-foreground);
     font-size: 15px;
+    
 }
 
 nav a:visited {
     color: var(--color-foreground);
 }
 
-nav a:focus, nav a:active {
+nav a:focus, nav a:active, nav div.active a {
     font-weight: bold;
 }
